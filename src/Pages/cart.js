@@ -67,7 +67,7 @@ const Cart = ({cartItems, itemRemove}) => {
         </div>
       ))}
       <div className='totaldiv'>
-        <span>{`${`Total Amount - $${TotalAmount}`}`}</span>
+        <span>Total Amount  &emsp; ${TotalAmount}</span>
         <button>Proceed to Pay</button>
       </div>
     </div>
