@@ -5,26 +5,26 @@ const Cart = ({cartItems, itemRemove}) => {
 
   let [cname, setCname] = useState("surpriceButton")
 
+  const [quantities, setQuantities] = useState({});
+// Incrementing item quantity in the cart
+  const handleUpgrade = (itemId) => {
+    setQuantities((prevQuantities) => {
+      return {...prevQuantities,[itemId]: (prevQuantities[itemId] || 0) + 1,};
+    });
+  };
+//Decrementing the Item Quantity in the Cart
+  const handleDegrade = (itemId) => {
+    setQuantities((prevQuantities) => {
+      return {...prevQuantities,[itemId]: Math.max((prevQuantities[itemId] || 0) - 1, 0),};
+    });
+  };
+// Calculating the total amount in the cart
   const calculateTotalAmount = () => {
     let total = 0;
     cartItems.forEach((item) => {
       total += (quantities[item.id] || 0) * item.new_price;
     });
     return total;
-  };
-
-  const [quantities, setQuantities] = useState({});
-
-  const handleUpgrade = (itemId) => {
-    setQuantities((prevQuantities) => {
-      return {...prevQuantities,[itemId]: (prevQuantities[itemId] || 0) + 1,};
-    });
-  };
-
-  const handleDegrade = (itemId) => {
-    setQuantities((prevQuantities) => {
-      return {...prevQuantities,[itemId]: Math.max((prevQuantities[itemId] || 0) - 1, 0),};
-    });
   };
 
   const togglefn1 = () => {

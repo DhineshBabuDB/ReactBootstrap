@@ -1,17 +1,18 @@
 .hero{
     background-image: url(../Assets/hero.jpg);
-    /* width: 94.9rem; */
     height: 40rem;
     background-size: cover;
+    padding-top: 5rem;
 }
 
 .hero-left{
+    width: 100%;
     color: white;
     display: grid;
     width: 50%;
     position: relative;
     top: 2rem;
-    padding: 0rem 8rem;
+    padding: 3rem 8rem 0 8rem;
     font-family: cursive;
 }
 
@@ -43,14 +44,15 @@
     margin: 3rem 0rem;
     width: 15rem;
     height: 3rem;
-    background-color: #F2910C;
-    box-shadow: 0 2px 5px -2px black;
+    background-color: rgb(48, 188, 69);
+    box-shadow: 1px 1px 2px 1px rgb(16, 16, 16);
     font-size: 1.2rem;
     border-radius: 3rem;
+    border: none;
 }
 
 .hero-left button:hover{
-    background-color: #F03313;
+    background-color: rgb(42, 221, 69);
     transition: 0.3s;
 }
 
@@ -68,39 +70,52 @@
     }
 }
 
-/* @media (max-width: 1025px){
-    .hero{
-        width: 100%;
-        overflow: hidden;
-        margin-right: 2rem;
-        height: 100%;
-    }
-}
+
 
 @media (max-width: 801px){
-    .hero{
-        width: 100%;
-        overflow: hidden;
-        margin-right: 2rem;
-        height: 100%;
+    .hero-left h2{
+        width: 25rem;
+        font-size: 2.3rem;
     }
-} */
+}
 
 @media (max-width: 500px) {
     .hero{
         width: 100%;
         overflow: hidden;
-        margin-right: 2rem;
+        /* margin-right: 2rem; */
         height: 100%;
+        padding: 0;
+        margin: 0;
+        padding-top: 5rem;
+    }
+
+    .hero-left p{
+        font-size: 1rem;
+        padding: .5rem 0;
     }
 
     .hero-left h2{
-        font-size: 3rem;
-        width: 20rem;
+        font-size: 2rem;
+        width: 15rem;
+        margin: 0;
         
     }
     .hero-left{
-        right: 2.5rem;
+        width: 90%;
+        /* right: 2.5rem; */
+        padding: 0;
+        padding-left: 2rem;
+        margin: 0; 
+        align-items: center;
+        justify-content: center;
+        place-content: center;
+    }
+
+    .hero-left article{
+        width: 15rem;
+        padding: 0 2rem 0 0;
+        margin: 0;
     }
 }
 

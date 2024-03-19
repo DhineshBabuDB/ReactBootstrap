@@ -8,18 +8,40 @@
 }
 
 .savorous-item{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 6rem;
+    gap: 2rem; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .savorous h1{
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(5, 0, 0, 0.723);
-    margin-top: 5rem;
-    margin-bottom: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 2rem 2rem 2rem;
+}
+
+
+
+@media (max-width: 1350px) {
+    .savorous-item{ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 790px) {
+    .savorous-item{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    }
+
+    .savorous h1{
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 320px) {

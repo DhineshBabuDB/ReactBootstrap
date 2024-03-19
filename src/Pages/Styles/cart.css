@@ -2,25 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 90vh; */
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 10rem 0rem 2rem 0rem;
     gap: 2rem;
     font-size: 1.1rem;
-    text-shadow: 2px 2px 4px rgba(5, 0, 0, 0.723);
+    /* text-shadow: 2px 2px 4px rgba(5, 0, 0, 0.723); */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    min-height: 60vh;
 }
 
 
 .cartbox{
     width: 60rem;
-    height: 3rem;
+    height: 4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.122);
     padding: 0rem 1rem;
+    
 }
 
 .itemname{
@@ -50,16 +51,22 @@
 }
 
 .removebutton button{
-    width: 7rem;
+    width: 5rem;
     height: 2rem;
     align-items: center;
-    background-color: white;
+    background-color: rgb(0, 38, 255);
     border: none;
     font-size: 1.1rem;
     text-shadow: 2px 2px 4px rgba(5, 0, 0, 0.723);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;  
     box-shadow: 5px 5px 10px #888888;
+    color: white;
+    border-radius: 5px;
+}
+
+.front-side button{
+    text-shadow: 2px 2px 4px rgba(5, 0, 0, 0.723);
 }
 
 .finalamount{
@@ -89,6 +96,7 @@
     font-weight: 700;  
     box-shadow: 5px 5px 10px #888888;
     border-radius: 2rem;
+    color: white;
 }
 
 button{
@@ -106,7 +114,29 @@ button{
         width: 15rem;
     }
     .cartbox{
-        width: 50rem;
+        width: 40rem;
+    }
+
+    .cartitems{
+        font-size: 0.8rem;
+    }
+
+    .totaldiv button{
+        width: 8rem;
+        height: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .removebutton button{
+        font-size: 0.8rem;
+    }
+
+    .totaldiv{
+        width: 20rem;
+    }
+
+    .front-side button{
+        font-size: 0.8rem;
     }
 }
 
@@ -115,7 +145,7 @@ button{
         width: 10rem;
     }
     .cartbox{
-        width: 40rem;
+        width: 30rem;
     }
 }
 
@@ -124,12 +154,12 @@ button{
         width: 8rem;
     }
     .cartbox{
-        width: 30rem;
+        width: 25rem;
     }
 }
 
 @media (max-width: 500px) {
     .cartbox{
-        width: 28rem;
+        width: 23rem;
     }
 }

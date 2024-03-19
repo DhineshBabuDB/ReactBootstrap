@@ -17,7 +17,7 @@
 .item-price-new{
     font-size: 1.3rem;
     font-weight: 600;
-    color: rgb(2, 124, 2);
+    color: rgb(0, 170, 0);
     
 }
 
@@ -49,16 +49,24 @@
     position: absolute;
     width: 5rem;
     height: 2rem;
-    background-color: aqua;
-    box-shadow: 5px 5px 10px #888888;
+    box-shadow: 2px 2px 4px 2px #e3e2e2, -2px -2px 4px 2px #edebeb;
+    border-radius: 8px;
 }
 
 .front-side button{
     width: 5rem;
     height: 2rem;
-    background-color: rgb(253, 253, 253);
+    background-color: rgba(123, 247, 70, 0.892);
     border: none;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;   
+}
+
+.front-side button:active{
+    background-color: rgba(98, 201, 54, 0.892);
 }
 
 .surpriceButton{
@@ -105,4 +113,8 @@
 .Addtoggle1 span{
     color: rgb(15, 188, 15);
     cursor: default;
+}
+
+button:active{
+    background-color: rgba(255, 255, 255, 0.285);
 }

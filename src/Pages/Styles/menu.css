@@ -1,8 +1,19 @@
 .menupage{
-    display:flex;
-    align-items: center;
-    padding: 4rem 4rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 6rem;
+    padding: 10rem 4rem;
+    justify-content: center;
+}
+
+@media (max-Width: 1281px){
+    .menupage{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+
+@media (max-width: 801px){
+    .menupage{
+        grid-template-columns: repeat(1,auto);
+    }
 }

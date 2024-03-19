@@ -23,9 +23,6 @@ const Hero = () => {
             <article style={bgm}><span>I</span>magine a plate adorned with plump, succulent crab, perfectly seasoned and bathed in a velvety garlic butter sauce. Each delicate bite reveals the crab's sweet, tender flesh, enhanced by the richness of the sauce. Garnished with a sprinkle of fresh herbs and a squeeze of lemon, this dish is a symphony of flavors that transports your taste buds to a coastal haven, where the exquisite simplicity of a delicious crab creation is a celebration of culinary perfection.</article>
             <Link to={'./Menu'}><button style={buttonpro}>Check the Menu</button></Link>
         </div>
-        <div className="hero-right">
-
-        </div>
     </div>
   )
 }

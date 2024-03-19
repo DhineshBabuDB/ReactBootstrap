@@ -29,8 +29,10 @@ const Navbar = ({Cartsize}) => {
     <div className='navbar'>
         
         <div className="navlogo">
-            <img src={logo} alt="Logo" height={70} width={144}/>
-            <p>MadCrab</p>
+            <Link to='/' className='homelink'>
+                <img id='SiteLogo' src={logo} alt="Logo" height={70} width={144}/>
+                <p>MadCrab</p>
+            </Link>
         </div>
         <div className="mainnav">
             <div className="threestripes">
@@ -46,12 +48,12 @@ const Navbar = ({Cartsize}) => {
         </div>
         <div className="nav-login">
             <div className='loginbuttondiv'>
-            <img src={usericon} alt="user" height={40} width={40}/>
-            <button>Login</button>
+                <img src={usericon} alt="user" height={40} width={40}/>
+                <button>Login</button>
             </div>
             <div className='cart'>
             <div className="cartcount">{Cartsize}</div>
-            <button className='cartbutton'><Link to='/cart'><img src={cart} alt="cart" height={40} width={40}/></Link></button>
+                <button className='cartbutton'><Link to='/cart'><img src={cart} alt="cart" height={40} width={40}/></Link></button>
             </div>
         </div>
     </div>

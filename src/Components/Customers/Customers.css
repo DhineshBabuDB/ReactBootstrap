@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0rem 5rem;
+    padding: 2rem 5rem;
 }
 
 .review-image{
@@ -19,9 +19,25 @@
 }
 .review-image img{
     border-radius: 50%;
+    padding: 4px;
+    border: 4px solid white;
+}
+
+.review-image span{
+    font-size: 1.5rem;
 }
 
 .review-review{
     text-align: justify;
 }
 
+.review-image span{
+    color: white;
+}
+
+
+@media (max-width:500px) {
+    .review-box{
+        padding: 2rem 0;
+    }
+}

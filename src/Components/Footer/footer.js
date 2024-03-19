@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className="locations">
-            <span>Loacations</span>
+            <span>Locations</span>
             <ul>
                 <li>Bangalore</li>
                 <li>Chennai</li>

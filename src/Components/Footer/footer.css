@@ -7,23 +7,34 @@
 }
 
 .locations{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 2rem 0rem;
-    width: 15%;
+    width: 100%;
     font-weight: 650;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.7rem;
     text-shadow: 0 2px 5px -2px black;
+    justify-content: center;
 }
 
 .locations span{
     align-items: center;
-    padding: 2rem;
+}
+
+.locations ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 
 .contacts{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     width: 18rem;
     font-weight: 650;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,8 +42,10 @@
 }
 
 .contacts span{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 2.5rem;
+    padding-top: 1rem;
 }
 
 .footermedia{
@@ -72,7 +85,7 @@
 }
 
 .socialicons{
-    width: 80%;
+    width: 16rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,9 +95,9 @@
    }
 
 .socialicons img {
-    width: 3rem;
-    height: 3rem;
-    padding: 1rem;
+    padding: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     gap: 2rem;
 }
 
@@ -127,8 +140,7 @@ hr{
 
     .locations{
         align-items: center;
-        /* padding-left:0rem ; */
-        margin-right: 8rem;
+        justify-content: center;
     }
 }
 
@@ -142,30 +154,22 @@ hr{
     }
 
     .contacts{
-        /* width: 20rem; */
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
     }
 
     .locations{
         align-items: center;
-        /* padding-left:0rem ; */
-        margin-right: 5rem;
+        justify-content: center;
     }
 
     .stayhungry{
         width: 12rem;
-        margin:0rem 0rem 0rem 4rem;
-    }
-
-    .socialicons{
-        display: flex;
-        width: 24rem;
-        margin-left: 4rem;
     }
 
     .footerlogo{
         width: 16rem;
     }
+
 }
 
 
@@ -173,7 +177,6 @@ hr{
     .footer{
         display: flex;
         flex-direction: column;
-        padding-left:2rem ;
     }
 
     .contacts{
