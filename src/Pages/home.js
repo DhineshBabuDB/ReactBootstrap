@@ -1,14 +1,14 @@
 import React from 'react'
-import Hero from '../Components/Hero/Hero'
 import Savorous from '../Components/Savorous/Savorous'
 import Ratings from '../Components/Ratings/ratings'
 import Newsletter from '../Components/NewsLetter/Newsletter'
+import IndividualIntervalsExample from '../Components/Carousel/Carousel'
 
 const Home = () => {
     
   return (
     <div>
-        <Hero />
+        <IndividualIntervalsExample />
         <Savorous />
         <Ratings />
         <Newsletter/>

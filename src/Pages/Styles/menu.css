@@ -1,12 +1,15 @@
 .menupage{
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 6rem;
+    gap: 2rem;
     padding: 10rem 4rem;
+    align-items: center;
+    place-items: center;
     justify-content: center;
 }
 
-@media (max-Width: 1281px){
+@media (max-Width: 991px){
     .menupage{
         grid-template-columns: repeat(2,auto);
     }

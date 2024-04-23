@@ -10,6 +10,7 @@ import Login from './Pages/login';
 import Cart from './Pages/cart';
 import Footer from './Components/Footer/footer';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

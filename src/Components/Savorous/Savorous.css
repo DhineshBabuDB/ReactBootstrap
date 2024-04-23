@@ -1,16 +1,22 @@
 .savorous{
+    max-width: 100vw;
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
     height: 150vh;
-    padding: 0rem 4rem;
+    
 }
 
 .savorous-item{
-    gap: 2rem; 
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .savorous h1{
@@ -21,21 +27,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5rem 2rem 2rem 2rem;
 }
 
 
 
 @media (max-width: 1350px) {
-    .savorous-item{ 
-    display: grid;
+    .savorous-item{
     grid-template-columns: repeat(2,1fr);
     }
 }
 
 @media (max-width: 790px) {
     .savorous-item{
-    display: grid;
     grid-template-columns: repeat(1,1fr);
     }
 
